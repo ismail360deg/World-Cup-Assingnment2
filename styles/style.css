@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Google-Fonts */
+
+/* #03324D #FF4800 #0A303A body
+ { */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/* ===========================
+Header-part css start 
+==============================*/
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.header-part {
+    background-color: #0A303A;
+    border-radius: 20px;
+}
+
+.container {
+    width: 1321px;
+    height: 646px;
+}
+
+.header-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-details .text {
+    width: 531px;
+    height: 452px;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+
+.header-details .img {
+    width: 581px;
+    height: 613px;
+    text-align: center;
+}
+
+.header-details .img img {
+    width: 614px;
+}
+
+.header-part h3 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header-part p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    width: 489px;
+    height: 78px;
+    margin-bottom: 30px;
+}
+
+.header-part a {
+    color: #fff;
+    background-color: tomato;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.header-part a i {
+    color: #fff;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.header-part a:hover i {
+    margin-left: 10px;
+}
+
+/* ===========================
+Header-part css end
+ ==============================*/
+.container2 {
+    width: 1321px;
+}
+
+.contain-part {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contain-part .blogs {
+    width: 312px;
+    height: 312px;
+    background-color: #0A303A;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.contain-part .blogs a {
+    background-color: #fff;
+}
+
+.contain-part .blogs .match {
+    padding-top: 70px;
+    margin-bottom: 40px;
+}
+
+.contain-part .blogs .match a {
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.contain-part .blogs .group {
+    margin-bottom: 40px;
+}
+
+.contain-part .blogs .group a {
+    padding: 10px 86px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.contain-part .blogs .blog {
+    margin-bottom: 40px;
+}
+
+.contain-part .blogs .blog a {
+    padding: 10px 110px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.contain-part .blogs .match a:hover {
+    background-color: tomato;
+    color: #fff;
+}
+
+.contain-part .blogs .group a:hover {
+    background-color: tomato;
+    color: #fff;
+}
+
+.contain-part .blogs .blog a:hover {
+    background-color: tomato;
+    color: #fff;
+}
+
+.contain-part .contains {
+    display: flex;
+}
+
+.contain-part .coluam-img {
+    margin: 7px;
+
+}
+
+.contain-part .card {
+    width: 312px;
+    height: 362px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contain-part .card img {
+    width: 100%;
+}
+
+.contain-part .card-details {
+    width: 315px;
+    padding: 15px;
+}
+
+.contain-part .card-details h5 {
+    width: 80px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.contain-part .card-details h3 {
+    margin-bottom: 10px;
+}
+
+.contain-part .card-details .social {
+    display: flex;
+}
+
+.contain-part .card-details .watch {
+    margin-right: 60px;
+}
+
+.all-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+
+/* ======================================
+Footer-part css start
+====================================== */
+.container3 {
+    width: 1321px;
+}
+
+.footer-part {
+    background-color: #0A303A;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.footer-part .footer-text h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 130px;
+}
+
+.footer-part .footer-item {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-part .footer-item a {
+    margin: 40px 15px;
+    color: #fff;
+}
+
+
+/* ======================================
+Footer-part css end
+====================================== */
