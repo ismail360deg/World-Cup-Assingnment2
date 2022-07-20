@@ -54,6 +54,18 @@ main {
 
 .header-details .img img {
     width: 614px;
+    animation: hover 2.5s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+
+@keyframes hover {
+    from {
+        width: 550px;
+    }
+
+    to {
+        width: 614px;
+    }
 }
 
 .header-part h3 {
