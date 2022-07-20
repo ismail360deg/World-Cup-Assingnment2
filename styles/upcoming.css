@@ -247,6 +247,22 @@ Footer-part css start
     color: #fff;
 }
 
+.social-icon .icon {
+    text-align: center;
+}
+
+.social-icon .icon i {
+    font-size: 25px;
+    color: #fff;
+    padding-left: 10px;
+    transition: .4s;
+}
+
+.social-icon .icon i:hover {
+    color: tomato;
+}
+
+
 
 /* ======================================
 Footer-part css end
