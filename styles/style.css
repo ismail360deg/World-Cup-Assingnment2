@@ -284,7 +284,7 @@ Footer-part css end
               Media Querious
  ================================================*/
 /* Mobile Devices */
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:576px) {
     .container {
         width: 100%;
         padding: 30px 15px;
@@ -343,12 +343,49 @@ Footer-part css end
 
 /* Tablet Devices */
 
-@media only screen and (min-width:688px) and (max-width:992px) {
-    .container2 {
-        width: 100%
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+    .container {
+        width: 100%;
+        padding: 30px 15px;
+        height: 400px;
+    }
+
+    .header-details {
+        gap: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-details .text {
+        padding-top: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .header-part h3 {
+        font-size: 40px;
+    }
+
+    .header-part p {
+        font-size: 10px;
+        padding: 0 10px;
+
+    }
+
+    .contain-part .contains {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
     .all-details {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+        gap: 20px;
     }
 }

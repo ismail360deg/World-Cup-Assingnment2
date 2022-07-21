@@ -337,13 +337,3 @@ Footer-part css end
 }
 
 /* Tablet Devices */
-
-@media only screen and (min-width:688px) and (max-width:992px) {
-    .container2 {
-        width: 100%
-    }
-
-    .all-details {
-        grid-template-columns: repeat(2, 1fr)
-    }
-}
