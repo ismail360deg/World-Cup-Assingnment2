@@ -115,6 +115,19 @@ contain-part css start
 
 }
 
+.contain-part .hide {
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+.contain-part .view {
+    background-color: tomato;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
 .contain-part .blogs {
     width: 312px;
     height: 312px;
@@ -309,6 +322,11 @@ footer {
 
 .footer-item a {
     color: #fff;
+    transition: .4s;
+}
+
+.footer-item a:hover {
+    color: tomato;
 }
 
 .social-icon .icon {
@@ -336,6 +354,7 @@ Footer-part css end
  ================================================*/
 /* Mobile Devices */
 @media only screen and (max-width:576px) {
+
     .container {
         width: 100%;
         padding: 30px 15px;
@@ -444,5 +463,17 @@ Footer-part css end
 
     .all-match-list {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contain-part .hide {
+        display: inline;
+        margin-left: 289px;
+    }
+
+    .contain-part .hide .view {
+        font-weight: 600;
+        font-size: 15px;
+        color: #fff;
+
     }
 }
