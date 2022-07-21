@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /* Google-Fonts */
 
-/* #03324D #FF4800 #0A303A body
- { */
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 * {
     box-sizing: border-box;
@@ -15,14 +9,21 @@ body {
     text-decoration: none;
 }
 
+.w-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
 
 /* ===========================
 Header-part css start 
 ==============================*/
-main {
-    display: flex;
-    justify-content: center;
-}
+
 
 .header-part {
     background-color: #0A303A;
@@ -40,31 +41,30 @@ main {
 }
 
 .header-details .text {
-    width: 531px;
-    height: 452px;
+    width: 100%;
+    height: 100%;
     padding-top: 50px;
     padding-left: 70px;
 }
 
 .header-details .img {
-    width: 581px;
-    height: 613px;
-    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 .header-details .img img {
-    width: 614px;
+    width: 100%;
     animation: hover 2.5s ease-in-out 0.5s infinite alternate;
     animation-play-state: running;
 }
 
 @keyframes hover {
     from {
-        width: 550px;
+        width: 80%;
     }
 
     to {
-        width: 614px;
+        width: 93%;
     }
 }
 
@@ -78,8 +78,6 @@ main {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
-    width: 489px;
-    height: 78px;
     margin-bottom: 30px;
 }
 
@@ -103,14 +101,10 @@ main {
 /* ===========================
 Header-part css end
  ==============================*/
-.container2 {
-    width: 1321px;
-}
 
 .contain-part {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    margin-top: 50px !important;
+
 }
 
 .contain-part .blogs {
@@ -182,6 +176,7 @@ Header-part css end
 
 .contain-part .contains {
     display: flex;
+    justify-content: space-between;
 }
 
 .contain-part .coluam-img {
@@ -232,37 +227,36 @@ Header-part css end
     row-gap: 15px;
 }
 
-
 /* ======================================
 Footer-part css start
 ====================================== */
 .container3 {
-    width: 1321px;
+    width: 100%;
 }
 
-.footer-part {
+footer {
     background-color: #0A303A;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    margin-right: 20px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.footer-part .footer-text h1 {
+.footer-text h1 {
     text-align: center;
     font-weight: 600;
     font-size: 40px;
     color: #fff;
-    margin-top: 130px;
+    padding: 20px;
 }
 
-.footer-part .footer-item {
+.footer-item {
     display: flex;
     justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+
 }
 
-.footer-part .footer-item a {
-    margin: 40px 15px;
+.footer-item a {
     color: #fff;
 }
 
@@ -281,8 +275,80 @@ Footer-part css start
     color: tomato;
 }
 
-
-
 /* ======================================
 Footer-part css end
 ====================================== */
+
+
+/* ========================================
+              Media Querious
+ ================================================*/
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+        padding: 30px 15px;
+        height: 621px;
+    }
+
+
+    .header-details {
+        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-part h3 {
+        font-size: 22px;
+    }
+
+    .header-part p {
+        font-size: 14px;
+
+    }
+
+    @keyframes hover {
+        from {
+            width: 300px;
+        }
+
+        to {
+            width: 320px;
+        }
+    }
+
+    .header-details .text {
+        padding-top: 0px;
+        padding-left: 0px;
+        text-align: center;
+    }
+
+    .contain-part .contains {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .all-details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+        gap: 20px;
+    }
+
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container2 {
+        width: 100%
+    }
+
+    .all-details {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
