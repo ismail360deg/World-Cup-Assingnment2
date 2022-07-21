@@ -378,11 +378,11 @@ Footer-part css end
 
     @keyframes hover {
         from {
-            width: 300px;
+            width: 260px;
         }
 
         to {
-            width: 320px;
+            width: 280px;
         }
     }
 
